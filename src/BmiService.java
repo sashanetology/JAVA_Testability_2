@@ -1,7 +1,6 @@
 public class BmiService {
     public double calculate(double mass, double height) {
-        double square = height * height;
-        double index = mass / square;
+        double index = mass / (Math.pow(height, 2));
         return index;
     }
 }
